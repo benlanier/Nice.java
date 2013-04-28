@@ -1,0 +1,16 @@
+ext {
+
+    commonsLangVersion = '3.1'
+    commonsCollectionVersion = '4.0-SNAPSHOT'
+    guavaVersion = '14.0.1'
+    junitVersion = '4.11'
+    
+    libraries = [
+        commonsLang: "org.apache.commons:commons-lang3:${commonsLangVersion}",
+        commonsCollection: "org.apache.commons:commons-collections4:${commonsCollectionVersion}",
+        guava: "com.google.guava:guava:${guavaVersion}",
+        junit: "junit:junit:${junitVersion}"
+    ]
+    
+}
+

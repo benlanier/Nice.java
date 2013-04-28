@@ -1,0 +1,24 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+
+apply from: 'libraries.gradle'
+
+defaultTasks 'build'
+group = 'my.jug.nice'
+
+repositories {
+    mavenCentral()
+    maven {
+        name 'apache.snapshots'
+        url 'https://repository.apache.org/content/repositories/snapshots'
+    }
+}
+
+dependencies {
+    compile libraries.commonsCollection
+    compile libraries.commonsLang
+    compile libraries.guava
+    testCompile libraries.junit
+}
+
